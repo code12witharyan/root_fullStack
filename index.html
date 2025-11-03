@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student Marks Manager</title>
+</head>
+<body>
+  <h1>Student Marks Manager</h1>
+
+  <form>
+    <label>Student Name: <input type="text" name="name"></label><br>
+    <label>Marks: <input type="number" name="marks" min="0" max="100"></label><br>
+    <button type="submit">Add Student</button>
+    <button type="reset">Clear</button>
+  </form>
+
+  <hr>
+
+  <div>
+    <button>Show All Students</button>
+    <button>Show Passed (≥ 40)</button>
+    <button>Calculate Average</button>
+    <button>Find Topper</button>
+  </div>
+
+  <hr>
+
+  <input type="text" placeholder="Search by name…">
+
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="4">No students yet. Add some above.</td></tr>
+    </tbody>
+  </table>
+
+  <p>Total students: <span>0</span></p>
+  <p>Average marks: <span>—</span></p>
+  <p>Topper: <span>—</span></p>
+</body>
+</html> 
