@@ -11,7 +11,9 @@ dotenv.config({
 }
 );
 
-connectDB();
+connectDB()
+.then()
+
 
 
 
